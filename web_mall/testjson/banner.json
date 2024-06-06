@@ -1,0 +1,24 @@
+{
+	"code": 200,
+	"message": "success",
+	"data": [
+		{
+		"id": 1,
+		"img": "./imgs/b1.png",
+		"url": "https://www.baidu.com",
+		"desc": null
+		},
+		{
+		"id": 2,
+		"img": "./imgs/b2.png",
+		"url": "https://www.jd.com/",
+		"desc": null
+		},
+		{
+		"id": 3,
+		"img": "./imgs/b3.png",
+		"url": "https://www.jd.com/",
+		"desc": null
+		}
+	]
+}

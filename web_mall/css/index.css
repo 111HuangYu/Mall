@@ -1,0 +1,337 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* 去除编号 */
+  list-style: none;
+}
+
+.index {
+  background-color: #f4f4f4;
+}
+
+.top {
+  background-color: #e3e4e5;
+  height: 30px;
+  line-height: 30px;
+}
+
+.inner-top {
+  height: 30px;
+  /*background-color: gray;*/
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.inner-top li {
+  display: inline-block;
+  color: #999;
+}
+
+.inner-top a {
+  text-decoration: none;
+}
+
+.inner-top a:hover {
+  color: #e33333;
+}
+
+.spacer {
+  width: 1px;
+  height: 15px;
+  background-color: #999;
+  margin: -3px 8px;
+}
+
+.header {
+  background-color: #fff;
+  height: 140px;
+}
+
+.headerbody {
+  height: 140px;
+  display: flex;
+}
+
+.hb1 {
+  flex: 1;
+  /* background-color: aqua; */
+  text-align: center;
+}
+
+.hb1 img {
+  box-sizing: content-box;
+  width: 120px;
+  height: 120px;
+  padding-top: 5%;
+}
+
+.hb2 {
+  position: relative;
+  flex: 4;
+  /* background-color: blue; */
+}
+
+.hb2 button {
+  width: 80px;
+  height: 35px;
+  background-color: #b1191b;
+  font-size: 12px;
+  color: #fff;
+  border: 0;
+  margin-left: -5px;
+}
+
+.searchbody {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.search_t {
+  display: inline-block;
+  top: 66px;
+  left: 346px;
+}
+
+.search_t a {
+  margin: 0 10px;
+  color: #999;
+  font-size: 14px;
+  text-decoration: dashed;
+}
+
+.search_t a:hover {
+  color: #b1191b;
+  text-decoration: underline;
+}
+
+.shortcart {
+  position: absolute;
+  border: 1px solid #e3e4e5;
+  padding: 3px 10px;
+  top: 27px;
+  right: 32px;
+}
+
+.shortcart i {
+  color: #e33333;
+}
+
+.shortcart a {
+  color: #e33333;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.shortcart a:hover {
+  text-decoration: underline;
+}
+
+#cartnum {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #e33333;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 7px;
+}
+
+.hb3 {
+  flex: 1;
+  /* background-color: green; */
+}
+
+.search_m {
+  box-sizing: content-box;
+  width: 425px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  padding: 2px 17px;
+  border: 3px solid red;
+  vertical-align: middle;
+}
+
+.mid-swiper {
+  height: 470px;
+  /* background-color: #999; */
+  display: flex;
+}
+
+#cg_p {
+  position: relative;
+  flex: 1;
+  background-color: white;
+}
+
+#sw_p {
+  flex: 5;
+
+  /* background-color: #e33333; */
+  margin-left: 5px;
+  overflow: hidden;
+
+}
+
+.category {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.category a {
+  color: black;
+  text-decoration: none;
+}
+
+.category a:hover {
+  color: red;
+
+}
+
+.cg_div {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 800px;
+  height: 470px;
+  z-index: 999;
+  display: none;
+  background-color: white;
+  border: 1px solid #f4f4f4;
+}
+
+.category_detail {
+  text-align: left;
+}
+
+.category_detail ul {
+  height: 40px;
+}
+
+.cd_li {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cc {
+  margin-top: 25px;
+}
+
+.cc-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+
+.cc-title::after,
+.cc-title::before {
+  position: absolute;
+  content: "";
+  background-image: url(../imgs/sprite.png);
+  width: 25px;
+  height: 20px;
+  top: 30%;
+}
+
+.cc-title::before {
+  left: 39%;
+}
+
+.cc-title::after {
+  left: 58%;
+}
+
+.gli {
+  float: left;
+  width: 210px;
+  height: 340px;
+  background-color: wheat;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.glifirst {
+  float: left;
+  width: 210px;
+  height: 340px;
+  background-color: wheat;
+  margin-top: 10px;
+}
+
+.glid1 {
+  position: relative;
+  width: 210px;
+  height: 340px;
+}
+
+.glid2 {
+  width: 210px;
+  height: 210px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.glid2 img {
+  width: 180px;
+  height: 180px;
+}
+
+.gtitle {
+  font-size: 16px;
+  margin: 0px 0px 0px 8px;
+  white-space: nowrap;
+  /*强制一行内显示*/
+  overflow: hidden;
+  /*溢出部分隐藏*/
+  text-overflow: ellipsis;
+  /*超出部分用省略号*/
+}
+
+.gdetail {
+  font-size: 14px;
+  height: 48px;
+  line-height: 24px;
+  margin: 5px 0px 0px 8px;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.gmoney {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px 0px 0px 8px;
+}
+
+.gmoney i {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.ga {
+  color: black;
+}
+
+.ga:hover {
+  color: red;
+
+}

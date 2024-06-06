@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container-flud h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="card col-4">
+            <div class="card-header">注册</div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">手机号</label>
+                        <input type="number" class="form-control" id="phone" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">密码</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password2" class="form-label">确认密码</label>
+                        <input type="password" class="form-control" id="password2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="verifyCode" class="form-label">验证码</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="verifyCode">
+                            <img id="captcha" src="/common/captcha" alt="captcha" onclick="$('#captcha').attr('src','/common/captcha')">
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">确认</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+<script>
+    $(function (){
+        $('form').submit(function (e){
+            e.preventDefault();
+            $.ajax({
+                url:"/user/reg",
+                type:'post',
+                data:{
+                    phone:$('#phone').val(),
+                    password:$('#password').val(),
+                    password2:$('#password2').val(),
+                    verifyCode:$('#verifyCode').val()
+                },
+                success:function (data){
+                    alert()
+                    if (data.code == 200){
+                        alert("注册成功")
+                        window.location.href='/login.html';
+                    }else {
+                        alert(data.message);
+                    }
+                }
+            })
+        })
+    });
+</script>
+</body>
+</html>

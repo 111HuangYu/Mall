@@ -1,0 +1,39 @@
+{
+	"code": 200,
+	"message": "success", 
+	"data": [
+		{
+			"id": 6, 
+			"code": "P006", 
+			"title": "衬衫1", 
+			"categoryId": 1,
+			"categoryName": "服饰", 
+			"img": "./imgs/g1.png", 
+			"price": 88,
+			"stocks": 100,
+			"description": "This is a Shirt" 
+		},
+		{
+			"id": 7,
+			"code": "P007",
+			"title": "衬衫2", 
+			"categoryId": 1, 
+			"categoryName": "服饰", 
+			"img": "./imgs/g2.png",
+			"price": 88, 
+			"stocks": 100, 
+			"description": "This is a Shirt" 
+		},
+		{
+			"id": 8,
+			"code": "P008",
+			"title": "衬衫3", 
+			"categoryId": 1, 
+			"categoryName": "服饰", 
+			"img": "./imgs/g1.png",
+			"price": 88, 
+			"stocks": 100, 
+			"description": "This is a Shirt" 
+		}
+	]
+}

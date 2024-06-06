@@ -1,0 +1,24 @@
+{
+	"code": 200, 
+	"message": "success", 
+	"data": [
+				{
+					"id": 1, 
+					"prodId": 1, 
+					"prodName": "T恤", 
+					"img":"./imgs/g1.png",
+					"price": 99,
+					"num": 60, 
+					"userId": 1 
+				},
+				{
+					"id": 3, 
+					"prodId": 2, 
+					"prodName": "联想笔记本", 
+					"img":"./imgs/g2.png",
+					"price": 4999,
+					"num": 2, 
+					"userId": 1 
+				}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"code": 200,
+	"message": "success",
+	"data": {
+		"id": 2,
+		"phone": "18888888888",
+		"nickName": "Bob"
+	}
+}
